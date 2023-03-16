@@ -326,3 +326,36 @@ Emergency
             "message": "Sukses",
             "data": {}
         }
+        
+        
+## Register Bank Account [/user/register-bank-account]
+
+### Register Bank Account [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+id empty if edit bank account, not empty if add bank account
+
++ Request (application/json)
+
+        {
+            "bankAccount":[
+                {
+                    "id":"3212345632123",
+                    "bankName":"Bank Mandiri",
+                    "bankNumber":"123456875",
+                    "bankAccountName":"Alexander Grahambel"
+                }
+            ]
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {}
+        }
