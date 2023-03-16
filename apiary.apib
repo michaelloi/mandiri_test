@@ -124,7 +124,7 @@ APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
 + Request (application/json)
 
         {
-            "birthOfDate":"20000120",
+            "dateOfBirth":"20000120",
             "lastEducation":"S1",
             "maritalStatus":"Single",
             "workType":"Karyawan Swasta",
@@ -358,4 +358,62 @@ id empty if edit bank account, not empty if add bank account
             "title": "Sukses",
             "message": "Sukses",
             "data": {}
+        }
+        
+        
+## Get User Profile [/user/profile]
+
+### Get User Profile [GET]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+id empty if edit bank account, not empty if add bank account
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {
+                "userDetail":{
+                    "dateOfBirth":"20000120",
+                    "lastEducation":"S1",
+                    "maritalStatus":"Single",
+                    "workType":"Karyawan Swasta",
+                    "businessName":"PT BANK MANDIRI",
+                    "businessIndustry":"Finance",
+                    "position":"Staff",
+                    "sourceOfFunds":"Gaji",
+                    "monthlyIncome":"10000000",
+                    "monthlySpending":"4500000",
+                    "workSinceMonth":"03",
+                    "workSinceYear":"2022"
+                },
+                "document":[
+                    {
+                        "id":"13132456da5d46a56",
+                        "type":"KTP",
+                        "number":"12012012012012012",
+                        "file":"http://image.bankmandiri.com"
+                    },
+                    {
+                        "id":"",
+                        "type":"NPWP",
+                        "number":"1445654985462",
+                        "file":"http://image.bankmandiri.com"
+                    }
+                ],
+                "emergencyContact":[
+                    {
+                        "id":"",
+                        "fullname":"Desi Ratnasari",
+                        "phoneNumber":"081308130813",
+                        "email":"desi@gmail.com",
+                        "relationshipStatus":"Saudara Kandung"
+                    }
+                ]
+            }
         }
