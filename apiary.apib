@@ -191,10 +191,41 @@ file is url path document
         }
         
         
-        
+
 ## Register Emergency Contact [/user/register-emergency-contact]
 
 ### Register Emergency Contact [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+id empty if edit contact, not empty if add contact
+
++ Request (application/json)
+
+        {
+            "id":"",
+            "fullname":"Desi Ratnasari",
+            "phoneNumber":"081308130813",
+            "email":"desi@gmail.com",
+            "relationshipStatus":"Saudara Kandung"
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {}
+        }   
+
+
+
+## Register Address [/user/register-address]
+
+### Register Address [POST]
 
 Header:
 APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
@@ -219,18 +250,18 @@ id empty if edit document, not empty if add document
             "title": "Sukses",
             "message": "Sukses",
             "data": {}
-        }   
-        
-        
+        }
 
-## Register Address [/user/register-address]
 
-### Register Address [POST]
+        
+## Register Emergency Contact [/user/register-emergency-contact]
+
+### Register Emergency Contact [POST]
 
 Header:
 APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
 
-id empty if edit document, not empty if add document
+id empty if edit contact, not empty if add contact
 
 + Request (application/json)
 
