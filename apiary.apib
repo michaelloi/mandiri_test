@@ -24,10 +24,6 @@ id customer
         {
             "username":"dsqdkjsqndkqufqifq",
             "password":"sdajdqwuqddsqdqfasd",
-            "biometric":{
-                "type":"FINGERPRINT",
-                "value":"dsadadnqkwbqfkfjqdsqmdsknqkqd"
-            },
             "deviceInfo":{
                 "deviceId":"dw1rwr1r17rdw11rfw1",
                 "deviceType":"Android",
@@ -182,6 +178,68 @@ file is url path document
                     "file":"http://image.bankmandiri.com"
                 }
             ]
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {}
+        }
+        
+        
+        
+## Register Emergency Contact [/user/register-emergency-contact]
+
+### Register Emergency Contact [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+id empty if edit document, not empty if add document
+
++ Request (application/json)
+
+        {
+            "id":"",
+            "fullname":"Desi Ratnasari",
+            "phoneNumber":"081308130813",
+            "email":"desi@gmail.com",
+            "relationshipStatus":"Saudara Kandung"
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {}
+        }   
+        
+        
+
+## Register Emergency Contact [/user/register-emergency-contact]
+
+### Register Emergency Contact [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+id empty if edit document, not empty if add document
+
++ Request (application/json)
+
+        {
+            "id":"",
+            "fullname":"Desi Ratnasari",
+            "phoneNumber":"081308130813",
+            "email":"desi@gmail.com",
+            "relationshipStatus":"Saudara Kandung"
         }
 
 
