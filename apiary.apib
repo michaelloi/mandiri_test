@@ -648,3 +648,40 @@ APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
                 ]
             }
         }
+
+
+## Loan Payment [/user/loan-payment]
+
+### Loan Payment [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
++ Request (application/json)
+
+        {
+            "idLoan":"12313456123",
+            "totalPayment":1000000,
+            "paymentMethod":"Virtual Account",
+            "paymentMethodVendor":"BANK MANDIRI",
+            "paymentAccountName":"Alexandre Grahambel",
+            "paymentAccountNumber":"213465213",
+            "paymentItem":[
+                {
+                    "idLoanInstallment":"1231313213",
+                    "totalPayment":1000000,
+                    "installment":1000000,
+                    "lateCharge":0
+                }
+            ]
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {}
+        }
