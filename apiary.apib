@@ -685,3 +685,51 @@ APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
             "message": "Sukses",
             "data": {}
         }
+
+
+## Get Param [/user/param]
+
+### Get Param [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
++ Request (application/json)
+
+        {
+            "code":"param.tenor",
+            "group":"tenor"
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {
+                "params":[
+                    {
+                        "code":"param.tenor",
+                        "group":"tenor",
+                        "value":"12"
+                    },
+                    {
+                        "code":"param.tenor",
+                        "group":"tenor",
+                        "value":"9"
+                    },
+                    {
+                        "code":"param.tenor",
+                        "group":"tenor",
+                        "value":"6"
+                    },
+                    {
+                        "code":"param.tenor",
+                        "group":"tenor",
+                        "value":"3"
+                    }
+                ]
+            }
+        }
