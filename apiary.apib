@@ -71,6 +71,10 @@ FINGERPRINT
 cid:
 id customer
 
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+    
+
 + Request (application/json)
 
         {
@@ -118,6 +122,9 @@ id customer
 ### Register Detail [POST]
 
 
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
 + Request (application/json)
 
         {
@@ -151,11 +158,30 @@ id customer
 
 ### Register Document [POST]
 
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+id empty if edit document, not empty if add document
+
+file is url path document
 
 + Request (application/json)
 
         {
-            "document":"
+            "document":[
+                {
+                    "id":"13132456da5d46a56",
+                    "type":"KTP",
+                    "number":"12012012012012012",
+                    "file":"http://image.bankmandiri.com"
+                },
+                {
+                    "id":"",
+                    "type":"NPWP",
+                    "number":"1445654985462",
+                    "file":"http://image.bankmandiri.com"
+                }
+            ]
         }
 
 
