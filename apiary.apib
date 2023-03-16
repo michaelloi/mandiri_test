@@ -472,6 +472,54 @@ id empty if edit bank account, not empty if add bank account
 
 
 
+## Get Loan Variable [/user/loan-variable]
+
+### Get Loan Variable [GET]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {
+                "loanVariable":[
+                    {
+                        "kreditLimit":10000000,
+                        "tenor":12,
+                        "flatRate":1.69,
+                        "effectiveRate":2.95,
+                        "provision":600000,
+                        "disbursementFee":120000,
+                        "insuranceFee":0,
+                        "installment":1000000,
+                        "lateInterest":6,
+                        "lateFee":200000,
+                        "lateTenor":1,
+                        "lateTenorUnit":"Month",
+                    },
+                    {
+                        "kreditLimit":10000000,
+                        "tenor":6,
+                        "flatRate":1.69,
+                        "effectiveRate":2.95,
+                        "provision":600000,
+                        "disbursementFee":120000,
+                        "insuranceFee":0,
+                        "installment":1000000,
+                        "lateInterest":6,
+                        "lateFee":200000,
+                        "lateTenor":1,
+                        "lateTenorUnit":"Month",
+                    }
+                ]
+            }
+        }
+
+
 ## Loan Request [/user/loan-request]
 
 ### Loan Request [POST]
@@ -483,7 +531,18 @@ APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
 
         {
             "kreditLimit":10000000,
-            
+            "purpose":"Pendidikan",
+            "tenor":12,
+            "flatRate":1.69,
+            "effectiveRate":2.95,
+            "provision":600000,
+            "disbursementFee":120000,
+            "insuranceFee":0,
+            "lateInterest":6,
+            "lateFee":200000,
+            "lateTenor":1,
+            "lateTenorUnit":"Month",
+            "receiveFunds":9280000,
         }
 
 
