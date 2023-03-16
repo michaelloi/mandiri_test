@@ -210,6 +210,64 @@ id empty if edit contact, not empty if add contact
             "email":"desi@gmail.com",
             "relationshipStatus":"Saudara Kandung"
         }
+        
++ Response 200 (application/json)
+
+        {
+            "code":"00000",
+            "title":"Sukses",
+            "message":"Sukses",
+            "data":{}
+        }
+
+    
+## Register Emergency Contact Address [/user/register-emergency-address]
+
+### Register Emergency Contact Address [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+id empty if edit address, not empty if add address
+
+addressType :
+Domisili
+Ktp
+Kerja
+Emergency
+
++ Request (application/json)
+
+        {
+            "address":[
+                {
+                    "id":"3212345632123",
+                    "addressType":"Domisili",
+                    "address":"Jalan jalan",
+                    "rt":"001",
+                    "rw":"002",
+                    "village":"Cibogo",
+                    "district":"Cisauk",
+                    "regency":"Tangerang",
+                    "provinci":"Banten",
+                    "postalCode":"15021",
+                    "telephone":"02123154"
+                },
+                {
+                    "id":"3212345632123",
+                    "addressType":"Ktp",
+                    "address":"Jalan jalan",
+                    "rt":"001",
+                    "rw":"002",
+                    "village":"Cibogo",
+                    "district":"Cisauk",
+                    "regency":"Tangerang",
+                    "provinci":"Banten",
+                    "postalCode":"15021",
+                    "telephone":"02123154"
+                }
+            ]
+        }
 
 
 + Response 200 (application/json)
@@ -219,10 +277,10 @@ id empty if edit contact, not empty if add contact
             "title": "Sukses",
             "message": "Sukses",
             "data": {}
-        }   
-
-
-
+        }
+        
+        
+        
 ## Register Address [/user/register-address]
 
 ### Register Address [POST]
@@ -230,47 +288,45 @@ id empty if edit contact, not empty if add contact
 Header:
 APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
 
-id empty if edit document, not empty if add document
+id empty if edit address, not empty if add address
+
+addressType :
+Domisili
+Ktp
+Kerja
+Emergency
 
 + Request (application/json)
 
         {
-            "id":"",
-            "fullname":"Desi Ratnasari",
-            "phoneNumber":"081308130813",
-            "email":"desi@gmail.com",
-            "relationshipStatus":"Saudara Kandung"
-        }
-
-
-+ Response 200 (application/json)
-
-        {
-            "code": "00000",
-            "title": "Sukses",
-            "message": "Sukses",
-            "data": {}
-        }
-
-
-        
-## Register Emergency Contact [/user/register-emergency-contact]
-
-### Register Emergency Contact [POST]
-
-Header:
-APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
-
-id empty if edit contact, not empty if add contact
-
-+ Request (application/json)
-
-        {
-            "id":"",
-            "fullname":"Desi Ratnasari",
-            "phoneNumber":"081308130813",
-            "email":"desi@gmail.com",
-            "relationshipStatus":"Saudara Kandung"
+            "address":[
+                {
+                    "id":"3212345632123",
+                    "addressType":"Domisili",
+                    "address":"Jalan jalan",
+                    "rt":"001",
+                    "rw":"002",
+                    "village":"Cibogo",
+                    "district":"Cisauk",
+                    "regency":"Tangerang",
+                    "provinci":"Banten",
+                    "postalCode":"15021",
+                    "telephone":"02123154"
+                },
+                {
+                    "id":"3212345632123",
+                    "addressType":"Ktp",
+                    "address":"Jalan jalan",
+                    "rt":"001",
+                    "rw":"002",
+                    "village":"Cibogo",
+                    "district":"Cisauk",
+                    "regency":"Tangerang",
+                    "provinci":"Banten",
+                    "postalCode":"15021",
+                    "telephone":"02123154"
+                }
+            ]
         }
 
 
