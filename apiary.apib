@@ -554,3 +554,47 @@ APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
             "message": "Sukses",
             "data": {}
         }
+        
+        
+## Loan History [/user/loan-history]
+
+### Loan History [GET]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {
+                "loanHistory":[
+                    {
+                        "kreditLimit":10000000,
+                        "purpose":"Pendidikan",
+                        "tenor":12,
+                        "flatRate":1.69,
+                        "effectiveRate":2.95,
+                        "provision":600000,
+                        "disbursementFee":120000,
+                        "insuranceFee":0,
+                        "lateInterest":6,
+                        "lateFee":200000,
+                        "lateTenor":1,
+                        "lateTenorUnit":"Month",
+                        "receiveFunds":9280000,
+                        "requestDate":"2023-03-16 12:20:50",
+                        "status":"Waiting Approval",
+                        "approvalDate":"",
+                        "rejectionDate":"",
+                        "rejectionReason":"",
+                        "sendEmail":0,
+                        "sendSms":0,
+                        "isPaid":"",
+                        "paidDate":""
+                    }
+                ]
+            }
+        }
