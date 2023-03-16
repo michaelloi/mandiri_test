@@ -387,8 +387,8 @@ id empty if edit bank account, not empty if add bank account
                     "businessIndustry":"Finance",
                     "position":"Staff",
                     "sourceOfFunds":"Gaji",
-                    "monthlyIncome":"10000000",
-                    "monthlySpending":"4500000",
+                    "monthlyIncome":10000000,
+                    "monthlySpending":4500000,
                     "workSinceMonth":"03",
                     "workSinceYear":"2022"
                 },
@@ -468,4 +468,30 @@ id empty if edit bank account, not empty if add bank account
                     }
                 ]
             }
+        }
+
+
+
+## Loan Request [/user/loan-request]
+
+### Loan Request [POST]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
++ Request (application/json)
+
+        {
+            "kreditLimit":10000000,
+            
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {}
         }
