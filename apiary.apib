@@ -9,9 +9,6 @@ Technical Assessment for Solution Analyst
 
 ### Login [POST]
 
-isUsingBiometric:
-true jika login dengan biometric, false jika tidak
-
 type :
 FACE
 FINGERPRINT
@@ -19,19 +16,20 @@ FINGERPRINT
 cid:
 id customer
 
+dataBlock :
+enkripsi username, password
+
 + Request (application/json)
 
         {
-            "username":"dsqdkjsqndkqufqifq",
-            "password":"sdajdqwuqddsqdqfasd",
+            "dataBlock":"dsqdkjsqndkqufqifq",
             "deviceInfo":{
                 "deviceId":"dw1rwr1r17rdw11rfw1",
                 "deviceType":"Android",
                 "deviceModel":"Xiomi Redmi note 11 Pro",
                 "deviceOs":"12",
                 "isRooted":false
-            },
-            "isUsingBiometric":true
+            }
         }
 
 
