@@ -61,7 +61,28 @@ enkripsi username, password
 
         {
             "email":"",
-            "phoneNumber":""
+            "phoneNumber":"082123213154"
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {}
+        }
+        
+        
+## Code Verification [/user/code-verification]
+
+### Code Verification [POST]
+
++ Request (application/json)
+
+        {
+            "code":"123457"
         }
 
 
