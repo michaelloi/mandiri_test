@@ -797,3 +797,45 @@ APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
                 ]
             }
         }
+
+
+
+
+## Get Notification [/user/loan-notification]
+
+### Get Notification [GET]
+
+Header:
+APP_SESSION : 21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir
+
+Type:
+Approval -> Disetujui
+Rejection -> Ditolak
+General -> Umum
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {
+                "notifications":[
+                    {
+                        "title":"Selamat Pinjaman Kamu disetujui",
+                        "content":"Pinjaman kamu senilai sekian sekian berhasil di setujui, cek rekening kamu",
+                        "type":"Approval",
+                        "sendingDate":"2023-03-16 12:20:50",
+                        "isRead":true
+                    },
+                    {
+                        "title":"Selamat Pinjaman Kamu disetujui",
+                        "content":"Pinjaman kamu senilai sekian sekian berhasil di setujui, cek rekening kamu",
+                        "type":"Approval",
+                        "sendingDate":"2023-03-16 12:20:50",
+                        "isRead":true
+                    }
+                ]
+            }
+        }
