@@ -9,28 +9,30 @@ Technical Assessment for Solution Analyst
 
 ### Login [POST]
 
-type : 
-GOOGLE
-FACEBOOK
-LINKEDIN
+isUsingBiometric:
+true jika login dengan biometric, false jika tidak
 
-isUsingOtherAccount:
-true jika login dengan akun sosmed
+type :
+FACE
+FINGERPRINT
 
 + Request (application/json)
 
         {
-            "username":"081281212142",
-            "password":"sha1",
-            "otherAccount":{
-                "type":"GOOGLE",
-                "id":"ID",
-                "name":"Name",
-                "image":"Image URL",
-                "email":"Email",
-                "token":"125gwugdw17673g"
+            "username":"dsqdkjsqndkqufqifq",
+            "password":"sdajdqwuqddsqdqfasd",
+            "biometric":{
+                "type":"FINGERPRINT",
+                "value":"dsadadnqkwbqfkfjqdsqmdsknqkqd"
             },
-            "isUsingOtherAccount":true
+            "deviceInfo":{
+                "deviceId":"dw1rwr1r17rdw11rfw1",
+                "deviceType":"Android",
+                "deviceModel":"Xiomi Redmi note 11 Pro",
+                "deviceOs":"12",
+                "isRooted":false
+            },
+            "isUsingBiometric":true
         }
 
 
