@@ -16,6 +16,9 @@ type :
 FACE
 FINGERPRINT
 
+cid:
+id customer
+
 + Request (application/json)
 
         {
@@ -44,166 +47,12 @@ FINGERPRINT
             "message": "Sukses",
             "data": {
                 "cid": "123123123123",
+                "fullname":"Alexander Grahambel",
                 "email": "alex@gmail.com",
                 "phoneNumber": "081208120812",
                 "type": "RETAIL",
-                "isVerified": false,
-                "lastLogin": "2022-06-13 22:20:50",
-                "retailData": {
-                    "fullname": "Alexander Grahambel",
-                    "gender": "Male",
-                    "birthDate": "1990-01-31",
-                    "preferences": [
-                        {
-                            "preferenceId": "01",
-                            "preferenceName": "Mencari Kerja"
-                        },
-                        {
-                            "preferenceId": "02",
-                            "preferenceName": "Menambah Sertifikat"
-                        }
-                    ],
-                    "sectors": [
-                        {
-                            "sectorId": "01",
-                            "sectorName": "Teknologi Informasi"
-                        },
-                        {
-                            "sectorId": "02",
-                            "sectorName": "Marketing"
-                        }
-                    ],
-                    "documents": [
-                        {
-                            "type": "PHOTO_PROFILE",
-                            "value":"https://kerjapro.com/potoprofile"
-                        },
-                        {
-                            "type": "PHOTO_BACKGROUND",
-                            "value":"https://kerjapro.com/potobackground"
-                        }
-                    ],
-                    "linkedAccounts": [
-                        {
-                            "apps": "FACEBOOK",
-                            "appsId": "51gs671e871273128ysg2",
-                            "appsCustomerName": "Alex facebook",
-                            "appsCustomerImage":"https://facebook.com/potoprofile",
-                            "appsCustomerEmail": "alex@facebook.com"
-                        },
-                        {
-                            "apps": "GOOGLE",
-                            "appsId": "41gs672ee871273128ysg2",
-                            "appsCustomerName": "Alex google",
-                            "appsCustomerImage":"https://google.com/potoprofile",
-                            "appsCustomerEmail": "alex@gmail.com"
-                        },
-                        {
-                            "apps": "LINKEDIN",
-                            "appsId": "31gs6743e871273128ysg2",
-                            "appsCustomerName": "Alex linkedin",
-                            "appsCustomerImage":"https://linkedin.com/potoprofile",
-                            "appsCustomerEmail": "alex@linkedin.com"
-                        }
-                    ]
-                },
-                "partnerData": [
-                    {
-                        "partnerId": "111222333333",
-                        "partnerName": "PT. HOBIKU INDONESIA Tbk.",
-                        "partnerType": "CORPORATE",
-                        "about": "Perusahaan raksasa IT multinasional",
-                        "tagline": "Scroll sampe bawah",
-                        "website": "https://hobi-ku.com",
-                        "provinceId": 542,
-                        "provinceName": "DKI Jakarta",
-                        "districtId": 543,
-                        "districtName": "Jakarta Barat",
-                        "address": "Jalan Satria IV no 50",
-                        "postalCode": "60271",
-                        "maps": "50,231 | 60,23214",
-                        "documents": [
-                            {
-                                "type": "PHOTO_PROFILE",
-                                "value":"https://kerjapro.com/potoprofile"
-                            },
-                            {
-                                "type": "PHOTO_BACKGROUND",
-                                "value":"https://kerjapro.com/potobackground"
-                            }
-                        ],
-                        "linkedAccounts": [
-                            {
-                                "apps": "FACEBOOK",
-                                "appsId": "51gs671e871273128ysg2",
-                                "appsCustomerName": "Alex facebook",
-                                "appsCustomerImage":"https://facebook.com/potoprofile",
-                                "appsCustomerEmail": "alex@facebook.com"
-                            },
-                            {
-                                "apps": "GOOGLE",
-                                "appsId": "41gs672ee871273128ysg2",
-                                "appsCustomerName": "Alex google",
-                                "appsCustomerImage":"https://google.com/potoprofile",
-                                "appsCustomerEmail": "alex@gmail.com"
-                            },
-                            {
-                                "apps": "LINKEDIN",
-                                "appsId": "31gs6743e871273128ysg2",
-                                "appsCustomerName": "Alex linkedin",
-                                "appsCustomerImage":"https://linkedin.com/potoprofile",
-                                "appsCustomerEmail": "alex@linkedin.com"
-                            }
-                        ]
-                    },
-                    {
-                        "partnerId": "2222222333333",
-                        "partnerName": "HOBIKU INDONESIA TRAINING CENTER",
-                        "partnerType": "TRAINER",
-                        "about": "Perusahaan raksasa IT multinasional",
-                        "tagline": "Scroll sampe bawah",
-                        "website": "https://hobi-ku.com",
-                        "provinceId": 542,
-                        "provinceName": "DKI Jakarta",
-                        "districtId": 543,
-                        "districtName": "Jakarta Barat",
-                        "address": "Jalan Satria IV no 50",
-                        "postalCode": "60271",
-                        "maps": "50,231 | 60,23214",
-                        "documents": [
-                            {
-                                "type": "PHOTO_PROFILE",
-                                "value":"https://kerjapro.com/potoprofile"
-                            },
-                            {
-                                "type": "PHOTO_BACKGROUND",
-                                "value":"https://kerjapro.com/potobackground"
-                            }
-                        ],
-                        "linkedAccounts": [
-                            {
-                                "apps": "FACEBOOK",
-                                "appsId": "51gs671e871273128ysg2",
-                                "appsCustomerName": "Alex facebook",
-                                "appsCustomerImage":"https://facebook.com/potoprofile",
-                                "appsCustomerEmail": "alex@facebook.com"
-                            },
-                            {
-                                "apps": "GOOGLE",
-                                "appsId": "41gs672ee871273128ysg2",
-                                "appsCustomerName": "Alex google",
-                                "appsCustomerImage":"https://google.com/potoprofile",
-                                "appsCustomerEmail": "alex@gmail.com"
-                            },
-                            {
-                                "apps": "LINKEDIN",
-                                "appsId": "31gs6743e871273128ysg2",
-                                "appsCustomerName": "Alex linkedin",
-                                "appsCustomerImage":"https://linkedin.com/potoprofile",
-                                "appsCustomerEmail": "alex@linkedin.com"
-                            }
-                        ]
-                    }
-                ]
+                "isVerified": true,
+                "sessionId":"21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir",
+                "lastLogin": "2022-06-13 22:20:50"
             }
         }
