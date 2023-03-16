@@ -110,3 +110,56 @@ id customer
                 "lastLogin": "2022-06-13 22:20:50"
             }
         }
+
+
+
+## Register Detail [/user/register-detail]
+
+### Register Detail [POST]
+
+type :
+FACE
+FINGERPRINT
+
+cid:
+id customer
+
++ Request (application/json)
+
+        {
+            "fullname":"Alexandre Grahambel",
+            "email":"alex@gmail.com",
+            "phoneNumber":"081208120812",
+            "username":"alex.grahambel",
+            "password":"sdajdqwuqddsqdqfasd",
+            "biometricFace":"dsadadnqkwbqfkfjqdsqmdsknqkqd",
+            "biometricFingerprint":"dsadadnqkwbqfkfjqdsqmdsknqkqd",
+            "deviceInfo":{
+                "deviceId":"dw1rwr1r17rdw11rfw1",
+                "deviceType":"Android",
+                "deviceModel":"Xiomi Redmi note 11 Pro",
+                "deviceOs":"12",
+                "isRooted":false
+            },
+            "isUsingBiometric":true
+        }
+
+
++ Response 200 (application/json)
+
+        {
+            "code": "00000",
+            "title": "Sukses",
+            "message": "Sukses",
+            "data": {
+                "cid": "123123123123",
+                "fullname":"Alexander Grahambel",
+                "email": "alex@gmail.com",
+                "phoneNumber": "081208120812",
+                "type": "RETAIL",
+                "isVerified": true,
+                "kreditScore":"A",
+                "sessionId":"21ehwiu1hdiw1rhi1ir13hur3i1ruh1ir",
+                "lastLogin": "2022-06-13 22:20:50"
+            }
+        }
